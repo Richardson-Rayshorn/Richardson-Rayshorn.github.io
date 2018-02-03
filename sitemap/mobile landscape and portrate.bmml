@@ -1,0 +1,122 @@
+<mockup version="1.0" skin="wireframe" fontFace="Balsamiq Sans" measuredW="1176" measuredH="616" mockupW="959" mockupH="573">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::iPhone" x="217" y="43" w="-1" h="-1" measuredW="282" measuredH="573" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <model>IPhone5</model>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::iPhone" x="603" y="124" w="573" h="282" measuredW="573" measuredH="282" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <model>IPhone5</model>
+        <orientation>landscape</orientation>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Canvas" x="245" y="142" w="227" h="50" measuredW="100" measuredH="70" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>9684093</color>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::IconLabel" x="251" y="151" w="57" h="-1" measuredW="54" measuredH="26" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>16777215</color>
+        <icon>skyatlas%7Cxsmall</icon>
+        <labelPosition>bottom</labelPosition>
+        <size>8</size>
+        <text>Daily%20Weather</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::Title" x="301" y="151" w="161" h="-1" measuredW="160" measuredH="12" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>left</align>
+        <color>3355443</color>
+        <size>9</size>
+        <text>Daily%20weather%20that%20keeps%20you%20informed.%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::Icon" x="406" y="163" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>2848996</color>
+        <icon>facebook-square%7Cxsmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::Icon" x="433" y="163" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>13576743</color>
+        <icon>youtube-square%7Cxsmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::Canvas" x="245" y="191" w="227" h="32" measuredW="100" measuredH="70" zOrder="7" locked="false" isInGroup="-1"/>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Icon" x="433" y="195" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>9684093</color>
+        <icon>bars%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::VideoPlayer" x="252" y="232" w="206" h="128" measuredW="300" measuredH="200" zOrder="9" locked="false" isInGroup="-1"/>
+    <control controlID="10" controlTypeID="__group__" x="251" y="368" w="206" h="144" measuredW="206" measuredH="144" zOrder="10" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="__group__" x="0" y="0" w="206" h="144" measuredW="206" measuredH="144" zOrder="0" locked="false" isInGroup="10">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="206" h="144" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="0"/>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::Paragraph" x="8" y="7" w="189" h="105" measuredW="275" measuredH="80" zOrder="1" locked="false" isInGroup="0">
+              <controlProperties>
+                <size>10</size>
+                <text>Download%20our%20Progressive%20Web%20App%20and%20get%20updates%20while%20on%20the%20move%20and%20having%20no%20internet%20connection%20or%20data%20on%20your%20mobile%20devices.%20%0A%20%0ADon%27t%20miss%20the%20weather%20anymore</text>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Button" x="84" y="104" w="111" h="31" measuredW="78" measuredH="24" zOrder="1" locked="false" isInGroup="10">
+          <controlProperties>
+            <color>6989903</color>
+            <text>Download</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::Canvas" x="686" y="167" w="403" h="50" measuredW="100" measuredH="70" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>9684093</color>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::IconLabel" x="701" y="175" w="65" h="-1" measuredW="54" measuredH="34" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>16777215</color>
+        <icon>skyatlas%7Csmall</icon>
+        <labelPosition>bottom</labelPosition>
+        <size>8</size>
+        <text>Daily%20Weather</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::Title" x="766" y="185" w="235" h="-1" measuredW="231" measuredH="16" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>left</align>
+        <color>3355443</color>
+        <size>13</size>
+        <text>Daily%20weather%20that%20keeps%20you%20informed.%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::Icon" x="1016" y="184" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>2848996</color>
+        <icon>facebook-square%7Cxsmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::Icon" x="1047" y="184" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>13576743</color>
+        <icon>youtube-square%7Cxsmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::Canvas" x="686" y="217" w="403" h="32" measuredW="100" measuredH="70" zOrder="16" locked="false" isInGroup="-1"/>
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::Icon" x="1043" y="221" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>9684093</color>
+        <icon>bars%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="18" controlTypeID="com.balsamiq.mockups::VideoPlayer" x="701" y="255" w="268" h="113" measuredW="300" measuredH="200" zOrder="18" locked="false" isInGroup="-1"/>
+  </controls>
+</mockup>
