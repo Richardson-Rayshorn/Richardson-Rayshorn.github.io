@@ -1,0 +1,147 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+}
+header h1 {
+    font-size: 31px;
+}
+header img {
+    float:left;
+    width: 64px;
+    height: 76px; 
+    margin: 5px;
+}
+header .subheading {
+    margin: 0 auto;
+    font-size: 19px;
+}
+
+nav {
+    position: absolute;
+    top: 24px;
+    right: 7px;
+}
+nav button {}
+nav ul {
+    display: none;
+    position: absolute;
+    right: 0;
+    background: #93c47d;
+    padding: 0;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li a {
+    width: 200px;
+    height: 40px;
+    display: block;
+    text-align: center;
+    padding: 5px 10px;
+    color: black;
+    text-decoration: none;
+    line-height: 2;
+}
+nav ul li.active a {
+    background: #6aa84f;
+    color: white;
+}
+nav ul li a:hover {
+    background: #6aa84f;
+    color: white;
+}
+
+.navigationClass{
+    display: block;
+}
+
+main{
+    width: 95%;
+    margin: 0 auto;
+}
+main h2 {
+    text-align: center;
+    color: #6aa84f;
+}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img { width: 100%; }
+
+section h3{
+    text-align: center;
+}
+.current{
+    display: flex;
+    width: 216px;
+    margin: 0 auto;
+}
+.current h4{
+    padding: 20px;
+}
+.highlow{
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+}
+.highlow p{
+    width: 100px;
+}
+.conditions{
+    width: 60%;
+    margin: 0 auto;
+}
+.forecast{
+    display: none;
+}
+article{
+    width: 96%;
+    margin: 0 auto;
+    border: 1px solid lightgray;
+    padding: 8px;
+}
+article h3{
+    text-align: center;
+}
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+  width: 100%; /* fill the page in the small/phone view */
+  margin: 0 auto;
+}
+
+footer {
+    width: 93%;
+    margin: 0 auto;
+}
+footer aside {
+    background-color: #93c47d;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 43px;
+}
+footer aside p{
+    max-width: 86%;
+    margin: 0 auto;
+    line-height: 1.45;
+}
+footer>p {
+    font-size: 14px;
+    background: #38761d;
+    color: white;
+    margin: 0;
+    padding: 14px 3px;
+    text-align: center;
+} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
