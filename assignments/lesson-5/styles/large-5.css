@@ -4,7 +4,7 @@
     width: 83%;
     }
     main figure{
-        width: 95%;
+        width: 100%;
         float: inherit;
     }
     .summary {
@@ -12,12 +12,18 @@
         width: 100%;
         float: inherit;
     }
-    .current h4 {
-        left: 88%;
+    main figure img {
+        margin-left: 0;
     }
-    .current picture {
-        right: 9%;
-        top: inherit;
+    .current{
+        width: 50%;
+        margin-left: 32px;
+    }
+    .current h4 {
+        float: left;
+    }
+    .current picture{
+        position: inherit;
     }
   article p.town-article img { width: 29.333%; }
     footer aside p {

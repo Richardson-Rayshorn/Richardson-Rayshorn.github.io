@@ -4,6 +4,8 @@
 
 body {
   font-size: 16px;
+    background:linear-gradient(30deg,#f1f1f1,#f6f6f6);
+    margin-top: -26px;
   /* Declare the base font-family - from google font api or other */
 }
 
@@ -12,8 +14,9 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
 }
 
 header {
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
+    background: white;
+    padding: 15px 0px;
 }
 header h1 {
     font-size: 31px;
@@ -34,7 +37,7 @@ nav {
     top: 24px;
     right: 7px;
 }
-nav button {}
+
 nav ul {
     display: none;
     position: absolute;
@@ -66,37 +69,43 @@ nav ul li a:hover {
 
 .navigationClass{
     display: block;
+    transition: 5s ease;
 }
 
 main{
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
 }
 main h2 {
     text-align: center;
     color: #6aa84f;
 }
-main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure {   
+    width: 100%;
+    margin: 0 !important;
+}
 main figure img { width: 100%; }
 
 section h3{
     text-align: center;
 }
 .current{
-    display: flex;
+    display: block;
     width: 216px;
     margin: 0 auto;
 }
 .current h4{
     padding: 20px;
+    float: left;
 }
 .highlow{
-    display: flex;
-    width: 60%;
+    display: block;
     margin: 0 auto;
+    width: 49%;
 }
 .highlow p{
     width: 100px;
+    float: left;
 }
 .conditions{
     width: 60%;
@@ -106,10 +115,10 @@ section h3{
     display: none;
 }
 article{
-    width: 96%;
-    margin: 0 auto;
+    max-width: 100%;
     border: 1px solid lightgray;
     padding: 8px;
+    background: white;
 }
 article h3{
     text-align: center;
@@ -120,20 +129,21 @@ article p.town-article img {  /* This structure refers to img elements that are 
 }
 
 footer {
-    width: 93%;
+    width: 100%;
     margin: 0 auto;
 }
 footer aside {
     background-color: #93c47d;
-    display: flex;
+    display: block;
     width: 100%;
     margin: 0 auto;
     padding: 10px 43px;
 }
 footer aside p{
-    max-width: 86%;
+    max-width: 55%;
     margin: 0 auto;
     line-height: 1.45;
+    text-align: center;
 }
 footer>p {
     font-size: 14px;
