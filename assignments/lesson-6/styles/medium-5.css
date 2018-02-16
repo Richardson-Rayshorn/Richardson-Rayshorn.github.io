@@ -1,0 +1,131 @@
+@media only screen and (min-width:37.5em){
+      /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    body{
+        width: 100%;
+    }
+    header img {
+    float: left;
+    width: 100px;
+    height: 87px;
+    margin: 5px;
+}
+    header h1 {
+    font-size: 39px;
+}
+    header .subheading {
+    margin: 0 auto;
+    display: block;
+    width: 71%;
+    font-size: 24px;
+}
+    nav button { display:none; }  /* hamburger button does not need to be shown */
+
+    nav {
+        position: inherit;
+        background: #93c47d;
+        }
+    nav ul {
+        display: inherit;
+        position: inherit;
+        overflow: hidden;
+        margin: 0 auto;
+        width: 90%;
+        }
+    nav ul li {
+        list-style: none;
+          float: left;
+        }
+    nav ul li a {
+          line-height: 4;
+          width: inherit;
+          height: 60px;
+          padding: 0px 5px;
+          margin: 0px 3px;
+        }
+     main{
+        width: 100%;
+        margin: 0 auto;
+      }
+     main figure {
+        margin: 0 0 .2rem 2%;
+        width: 55%;
+         float: left;
+        }
+    main figure img {
+    width: 100%;
+    margin-left: 12px;
+    }
+    
+    .summary{
+        display: block;
+        width: 43%;
+        float: left;
+    }
+    .current h4 {
+        padding: 20px;
+        float: right;
+    }
+    .current picture{
+        position: relative;
+        top: 38px;
+    }
+    .summary h3{
+        display:none;
+    }
+    .highlow {
+    display: block;
+    width: 60%;
+    }
+    .highlow p {
+    width: 100%;
+    text-align: right;
+}
+    
+
+.conditions {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+  section.forecast { 
+      display:block; 
+      clear: left;
+      margin: 15px auto;
+      width: 75%;
+    }  /* show the 10-day forecast with the medium view and up */
+  
+    section h3 {
+    text-align: center;
+    border: 1px solid;
+    padding: 15px;
+    margin: 0;
+    background: green;
+    color: white;
+}
+    section.forecast table{
+        width: 100%;
+    }
+    section.forecast th{
+        border: 1px solid;
+        padding: 5px;
+        background: white;
+        }
+    section.forecast td{
+        border: 1px solid;
+        padding: 5px;
+        text-align: center;
+        background: white
+    }
+    article{
+        overflow: hidden;
+    }
+  article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
+    footer{
+    width: 96%;
+}
+    footer{
+        width:100%;
+    }
+
+    
+}

@@ -1,0 +1,30 @@
+@media only screen and (min-width:64em){
+     /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    header .subheading {
+    width: 83%;
+    }
+    main figure{
+        width: 100%;
+        float: inherit;
+    }
+    .summary {
+        display: inline-flex;
+        width: 100%;
+        float: inherit;
+    }
+    main figure img {
+        margin-left: 0;
+    }
+    .current{
+        width: 50%;
+        margin-left: 32px;
+    }
+    .current h4 {
+        float: left;
+    }
+    .current picture{
+        position: inherit;
+    }
+  article p.town-article img { width: 29.333%; }
+
+}
