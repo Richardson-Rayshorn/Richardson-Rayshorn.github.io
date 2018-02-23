@@ -1,0 +1,46 @@
+@media only screen and (min-width:64em){
+     /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    header .subheading {
+    width: 83%;
+    }
+    main figure{
+        width: 100%;
+        float: inherit;
+    }
+    .summary {
+        display: inline-flex;
+        width: 100%;
+        float: inherit;
+    }
+    main figure img {
+        margin-left: 0;
+        height: 480px;
+    }
+    .highlow p {
+    width: 56%;
+    }
+    .current{
+        width: 13%;
+        margin: 0 auto;
+        flex-direction: row;
+    }
+    .current h4 {
+        float: inherit;
+        padding: inherit;
+    }
+    .current picture{
+        position: inherit;
+    }
+  article p.town-article img { width: 29.333%; }
+    
+    /*Gallery Page*/
+    
+    .gallery.page #container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    }
+    .item img{
+    height: 60%;
+    }
+
+}
