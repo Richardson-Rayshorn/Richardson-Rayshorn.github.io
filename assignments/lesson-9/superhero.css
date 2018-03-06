@@ -7,6 +7,9 @@ html {
 body {
   width: 800px;
   margin: 0 auto;
+    border: 10px solid;
+    padding: 46px;
+    box-sizing: border-box;
 }
 
 h1, h2 {
@@ -28,9 +31,12 @@ header p {
 
 /* section styles */
 
+section{
+    display: flex;
+}
+
 section article {
   width: 33%;
-  float: left;
 }
 
 section p {

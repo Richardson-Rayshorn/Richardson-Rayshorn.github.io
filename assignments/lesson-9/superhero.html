@@ -50,7 +50,7 @@
             for(var i =0; i < heroes.length; i++){
                 
                 var articles = document.createElement('article');
-                var myH2 = document.createElement('h1');
+                var myH2 = document.createElement('h2');
                 var para1 = document.createElement('p');
                 var para2 = document.createElement('p');
                 var para3 = document.createElement('p');
@@ -68,15 +68,15 @@
                     list.appendChild(listItem);
                 }
                 
+                articles.appendChild(myH2);
+                articles.appendChild(para1);
+                articles.appendChild(para2);
+                articles.appendChild(para3);
+                articles.appendChild(list);
+                
+                section.appendChild(articles);
             }
             
-            articles.appendChild(myH2);
-            articles.appendChild(para1);
-            articles.appendChild(para2);
-            articles.appendChild(para3);
-            articles.appendChild(list);
-            
-            section.appendChild(articles);
         }
     </script>
   </body>
