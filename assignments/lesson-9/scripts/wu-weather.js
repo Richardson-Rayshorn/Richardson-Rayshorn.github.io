@@ -2,7 +2,7 @@
 
 var weatherUpdates = new XMLHttpRequest();
 
-weatherUpdates.open('GET', 'http://api.wunderground.com/api/2bc32cdf623ceed5/conditions/q/MN/Franklin.json', true);
+weatherUpdates.open('GET', 'https://api.wunderground.com/api/2bc32cdf623ceed5/conditions/q/MN/Franklin.json', true);
 weatherUpdates.send();
 
 weatherUpdates.onload = function(){
@@ -22,7 +22,7 @@ weatherUpdates.onload = function(){
 /************ Forecast ***********/
 var forecastArea = document.getElementById("forecastTable");
 
-var address = 'http://api.wunderground.com/api/2bc32cdf623ceed5/forecast10day/q/MN/Franklin.json';
+var address = 'https://api.wunderground.com/api/2bc32cdf623ceed5/forecast10day/q/MN/Franklin.json';
 var forecastUpdate = new XMLHttpRequest();
 forecastUpdate.open('GET', address);
 forecastUpdate.send();
