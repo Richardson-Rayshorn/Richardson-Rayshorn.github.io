@@ -9,7 +9,7 @@ weatherUpdates.onload = function(){
     var weatherData = JSON.parse(weatherUpdates.response);
     document.getElementById("cityName").innerHTML = weatherData.current_observation.display_location.full;
     document.getElementById("weatherType").innerHTML = weatherData.current_observation.weather;
-    document.getElementById("weatherTypeImage").src = weatherData.current_observation.icon_url;
+    document.getElementById("weatherTypeImage").src = weatherData;
     document.getElementById("highLevel").innerHTML = "High: " + weatherData.current_observation.feelslike_f + "&deg; F";
     document.getElementById("lowLevel").innerHTML = "Low: " + weatherData.current_observation.dewpoint_f + "&deg; F";
     document.getElementById("precipitation").innerHTML = "Precipitation: " + weatherData.current_observation.relative_humidity;
@@ -23,7 +23,7 @@ var forecastArea = document.getElementById("forecastTable");
 
 var address = 'https://api.wunderground.com/api/2bc32cdf623ceed5/forecast10day/q/MN/Franklin.json';
 var forecastUpdate = new XMLHttpRequest();
-forecastUpdate.open('GET', address);
+forecastUpdate.open('GET', address, true);
 forecastUpdate.send();
 
 
