@@ -1,0 +1,127 @@
+
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily Weather</title>
+  <meta name="author" content="Rayshorn Richardson">
+  <meta name="description" content="Franklyn Weather Page | weather update in the franklin city area | Daily Weather">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet"> <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main-5.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium-5.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large-5.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+  
+</head>
+<body class="stormcenter page">
+
+  <header>
+    <img src="images/logo.png" alt="The site logo">
+    <h1>Daily Weather</h1>
+    <div class="subheading">Daily Weather that keeps you informed</div>
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav>
+    <button onclick="toggleNavMenu()">&#9776;</button>
+    <ul id="nav">
+    	<li><a href="#">Home</a></li>
+    	<li><a href="franklin-7.html">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li class="active"><a href="#">Storm Center</a></li>
+    	<li><a href="gallery-7.html">Gallery</a></li>
+    </ul>		
+  </nav>
+    
+  <main>
+      <form action="thanks.html" method="get" id="stormForm" enctype="multipart/form-data">
+          <fieldset>
+              <legend>Personal Information</legend>
+              <div id="fullName">
+                  <div id="firstName">
+                      <label>First Name:</label>
+                      <input type="text" name="firstName" placeholder="Phillip" pattern="[a-zA-Z-,_]{3,99}" required>
+                  </div>
+                  <div id="lastName">
+                      <label>Last Name:</label>
+                      <input type="text" name="lastName" placeholder="Joe" pattern="[a-zA-Z-,_]{3,99}" required>
+                  </div>
+              </div>
+              <div id="email">
+                  <label>E-Mail:</label>
+                  <input type="email" name="email" placeholder="philjoe@email.com">
+              </div>
+              <div id="numberZips">
+                  <label>Telephone Number:</label>
+                  <input type="tel" name="number" placeholder="Phone Number" required>
+                  <label>Zip Code:</label>
+                  <input type="number" name="zip" placeholder="Zip Code" required>
+              </div>
+          </fieldset>
+          <fieldset>
+              <legend>Storm Data</legend>
+                <div id="stormInfo">
+                  <div id="stormDate">
+                      <label>Storm Data:</label>
+                      <input type="date" name="stormDate" required>
+                  </div>
+                  <div id="stormType">
+                      <label>Storm Type:</label>
+                      <input list="storms" required>
+                      <datalist id="storms">
+                          <option value="Flash Flood">Flash Flood</option>
+                          <option value="Hail">Hail</option>
+                          <option value="Hurricane">Hurricane</option>
+                          <option value="Thunderstorm">Thunderstorm</option>
+                          <option value="Tornado">Tornado</option>
+                      </datalist>
+                  </div>
+                  <div id="severity">
+                      <label>Storm Severity:</label>
+                      <input type="range" id="rate" value="5" min="1" max="10" step="1" oninput="ratingValue(this.value)" onchange="ratingValue(this.value)">
+                      <span id="ratingvalue">5</span>
+                  </div>
+                  <div id="regions">
+                      <label>Storm Region:</label>
+                      <select>
+                          <option disabled>Select Region</option>
+                          <option value="Franklin">Franklin</option>
+                          <option value="Greenville">Greenville</option>
+                          <option value="Springfield">Springfield</option>
+                      </select>
+                  </div>
+                  <div id="dangerLevel">
+                  <label>Danger Level:</label><br>
+                    <div id="radiobuttons">
+                        <input type="radio" name="d1">Yes <br>
+                        <input type="radio" name="d1">Maybe <br>
+                        <input type="radio" name="d1">No <br>
+                    </div>
+                  </div>
+               </div>
+              <div id="message">
+                  <label>Additional Information</label>
+                  <textarea></textarea>
+              </div>
+          </fieldset>
+          <div id="submit">
+                <input type="submit">
+          </div>
+      </form>
+  </main>
+    
+  <footer>
+    <aside>
+      <p>123 Main Street Franklin, MU 83454 (990)9999809 contact@dailyweather.com http://www.dailyweather.com</p>
+    </aside>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | Daily Weather | <span id="currentdate"></span></p>
+  </footer>
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/windChill.js"></script>
+  <script src="scripts/rating.js"></script>
+</body>
+</html>
