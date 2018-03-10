@@ -7,7 +7,6 @@ weatherUpdates.send();
 
 weatherUpdates.onload = function(){
     var weatherData = JSON.parse(weatherUpdates.response);
-    console.log(weatherData);
     document.getElementById("cityName").innerHTML = weatherData.current_observation.display_location.full;
     document.getElementById("weatherType").innerHTML = weatherData.current_observation.weather;
     document.getElementById("weatherTypeImage").src = weatherData.current_observation.icon_url;
@@ -30,7 +29,6 @@ forecastUpdate.send();
 
 forecastUpdate.onload = function(){
     var forecastData = JSON.parse(forecastUpdate.response);
-    console.log(forecastData);
     forecastLoop(forecastData);
 }
 
