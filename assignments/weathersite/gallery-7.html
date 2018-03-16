@@ -1,0 +1,83 @@
+
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery | Daily Weather</title>
+  <meta name="author" content="Rayshorn Richardson">
+  <meta name="description" content="Gallery | weather update in the franklin city area | Daily Weather">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet"> <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main-5.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium-5.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large-5.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+  
+</head>
+<body class="gallery page">
+
+  <header>
+    <img src="images/logo1.png" alt="The site logo">
+    <h1>Daily Weather</h1>
+    <div class="subheading">Daily Weather that keeps you informed</div>
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav>
+    <button onclick="toggleNavMenu()">&#9776;</button>
+    <ul id="nav">
+    	<li><a href="index.html">Home</a></li>
+    	<li><a href="franklin-7.html">Franklin</a></li>
+    	<li><a href="greenville.html">Greenville</a></li>
+    	<li><a href="springfield.html">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="#">Gallery</a></li>
+    </ul>		
+  </nav>
+    
+  <main>
+    <figure>
+          <img src="images/globe.png" alt="Franklin Picture" srcset="images/Optimized-globe.png 500w" sizes="100vw">
+        <div class="page-title"><h3>Gallery</h3></div>
+    </figure>
+    <div id="container">
+        <div class="item">
+            <img src="images/lightning.jpg" alt="lightning Picture" srcset="images/Optimized-lightning-small.jpg 500w, images/Optimized-lightning-medium.jpg 790w,  images/Optimized-lightning-large.jpg 1200w" sizes="100vw">
+            <p class="description">dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+        </div>
+        <div class="item">
+            <img src="images/weathermap.jpg" alt="Map Picture">
+            <p class="description">dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+        </div> 
+        <div class="item">
+            <img src="images/marine-weather.jpg" alt="Marine Picture" srcset="images/Optimized-marine-weather-small.jpg 500w" sizes="100vw">
+            <p class="description">dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+        </div> 
+        <div class="item">
+            <img src="images/thunderStorm.jpg" alt="Thunder Storm Picture">
+            <p class="description">dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+        </div> 
+        <div class="item">
+            <img src="images/tornado.jpg" alt="Tornado Picture">
+            <p class="description">dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+        </div> 
+        <div class="item">
+            <img src="images/winter.jpg" alt="Winter Picture" srcset="images/Optimized-winter-small.jpg 500w" sizes="100vw">
+            <p class="description">dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+        </div> 
+    </div>
+  
+  </main>
+    
+  <footer>
+    <aside>
+      <p>123 Main Street Franklin, MU 83454 (990)9999809 contact@dailyweather.com http://www.dailyweather.com</p>
+    </aside>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | Daily Weather | <span id="currentdate"></span></p>
+  </footer>
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+
+</body>
+</html>

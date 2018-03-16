@@ -1,0 +1,138 @@
+
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Franklin | Daily Weather</title>
+  <meta name="author" content="Rayshorn Richardson">
+  <meta name="description" content="Franklyn Weather Page | weather update in the franklin city area | Daily Weather">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet"> <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main-5.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium-5.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large-5.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+  
+</head>
+<body class="franklyn page">
+
+  <header>
+    <img src="images/logo1.png" alt="The site logo">
+    <h1>Daily Weather</h1>
+    <div class="subheading">Daily Weather that keeps you informed</div>
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav>
+    <button onclick="toggleNavMenu()">&#9776;</button>
+    <ul id="nav">
+    	<li><a href="index.html">Home</a></li>
+    	<li><a href="#">Franklin</a></li>
+    	<li><a href="greenville.html">Greenville</a></li>
+    	<li><a href="springfield.html">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery-7.html">Gallery</a></li>
+    </ul>		
+  </nav>
+    
+  <main>
+    <figure>
+         <img src="images/franklin-original.jpeg" alt="Franklin Picture" srcset="images/Optimized-franklin-small.jpeg 500w, images/Optimized-franklin-medium.jpeg 790w,  images/Optimized-franklin-large.jpeg 1200w" sizes="100vw">
+        <div class="page-title"><h3>Franklin</h3></div>
+    </figure>
+    <h2 id="cityName">City, State</h2>
+    <section class="summary">
+      <div class="current">
+        <h4 id="weatherType">Weather</h4>
+        <picture>
+            <img src="images/sun.png" alt="weather" width="109" id="weatherTypeImage">
+        </picture>
+      </div> 
+      <h3>Weather Summary</h3>    
+      <div class="highlow">
+        <p id="highLevel">High: 90 &deg; F</p>  
+        <p id="lowLevel">Low: 66 &deg; F</p>  
+      </div>  
+      <div class="conditions">
+        <p id="precipitation">Precipitation: 0%</p>  
+        <p id="windSpeed">Wind Speed: 5 mpg SW</p>
+      </div>
+        <div class="windChill">
+            <p>Wind Chill: <span id="windChill"></span></p>
+        </div>
+    </section>
+        
+    <section class="forecast">
+      <h3>10 Day Forecast</h3>
+      <!--<table>
+	    <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+		</thead>
+        <tbody>  
+          <tr>
+            <td>89&deg;F</td>
+            <td>87&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>72&deg;F</td>
+            <td>79&deg;F</td>
+            <td>83&deg;F</td>
+            <td>85&deg;F</td>
+            <td>89&deg;F</td>
+          </tr>
+		</tbody>
+      </table>-->
+        <span id="forecastTable"></span>
+    </section>
+      
+    <article>
+      <h3>Franklin Breaks Record</h3>	
+      <p class="town-article">
+          <img src="images/articleImage.jpg" alt="sun Shining through tree">
+        dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+      </p>
+    </article>		  
+  
+  </main>
+    
+  <footer>
+    <aside>
+      <p>123 Main Street Franklin, MU 83454 (990)9999809 contact@dailyweather.com http://www.dailyweather.com</p>
+    </aside>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | Daily Weather | <span id="currentdate"></span></p>
+  </footer>
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/windChill.js"></script>
+<script src="scripts/wu-weather.js"></script>
+</body>
+    <script>
+        var urlString = document.location.href;
+        var urlArray = urlString.split('/');
+        var pageHref = urlArray[urlArray.length - 1];
+
+        if(pageHref !== ""){
+            var menu = document.querySelectorAll('ul#nav li a');
+            for(var i = 0; i < menu.length; i++){
+                var currentUrl = (menu[i].getAttribute("href"));
+                menu[i].parentNode.className = "";
+                if(currentUrl === pageHref){
+                    menu[i].parentNode.className = "active";
+                }
+            }
+        }
+        </script>
+</html>

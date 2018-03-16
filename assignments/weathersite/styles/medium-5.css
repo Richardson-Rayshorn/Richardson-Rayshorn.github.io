@@ -1,0 +1,231 @@
+@media only screen and (min-width:37.5em){
+      /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    body{
+        width: 100%;
+    }
+    header{
+        background: white;
+        color: inherit;
+        padding: 0 2%;
+    }
+    header img {
+    float: left;
+    width: 100px;
+    height: 87px;
+    margin: 5px;
+}
+    header h1 {
+    font-size: 39px;
+}
+    header .subheading {
+    margin: 0 auto;
+    display: inline-flex;
+    width: 71%;
+    font-size: 24px;
+}
+    nav button { display:none; }  /* hamburger button does not need to be shown */
+
+    nav {
+        position: inherit;
+        background: linear-gradient(90deg,#38761d,#326a1a);
+        }
+    nav ul {
+        display: inherit;
+        position: inherit;
+        overflow: hidden;
+        margin: 0 auto;
+        width: 90%;
+        }
+    nav ul li {
+        list-style: none;
+        display: inline-flex;
+        }
+    nav ul li a {
+          line-height: 4;
+          width: inherit;
+          height: 60px;
+          padding: 0px 5px;
+          margin: 0px 3px;
+        }
+     main{
+        width: 100%;
+        margin: 0 auto;
+      }
+     main figure {
+        margin: 0 0 .2rem 2%;
+        width: 55%;
+         float: left;
+        }
+    main figure img {
+    width: 100%;
+    margin-left: 12px;
+    }
+    
+    .summary{
+        display: flex;
+        flex-direction: column;
+        width: 43%;
+    }
+    .current h4 {
+        padding: 20px;
+    }
+    .current picture{
+        position: relative;
+        top: 38px;
+    }
+    .summary h3{
+        display:none;
+    }
+    .highlow {
+    width: 60%;
+    }
+    .highlow p {
+    width: 100%;
+    text-align: right;
+}
+    
+
+.conditions, .windChill {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+  section.forecast { 
+      display: flex;
+      flex-direction: column;
+      margin: 15px auto;
+      width: 75%;
+    }  /* show the 10-day forecast with the medium view and up */
+  
+    section h3 {
+    text-align: center;
+    border: 1px solid;
+    padding: 15px;
+    margin: 0;
+    background: green;
+    color: white;
+}
+    section.forecast table{
+        width: 100%;
+    }
+    section.forecast th{
+        border: 1px solid;
+        padding: 5px;
+        background: white;
+        }
+    section.forecast td{
+        border: 1px solid;
+        padding: 5px;
+        text-align: center;
+        background: white
+    }
+    article{
+        overflow: hidden;
+    }
+    article p{
+    display: flex;
+    flex-direction: row-reverse;
+}
+  article p.town-article img { width: 62.666%; height: 40%; }  /* responsive images */
+    footer{
+    width: 96%;
+            
+}
+    footer{
+        width:100%;
+    }
+
+    /*Gallery Page*/
+.gallery.page main figure{
+    width: inherit;
+    float: inherit;
+}
+
+#container{
+    grid-template-columns: auto auto;
+}
+    
+.item img {
+    height: 53%;
+}
+    
+    /*****************Storm page********************/
+
+    .stormcenter fieldset{
+        width: 90%;
+        margin: 10px auto;
+    }
+   /* 
+    #fullName{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #fullName input{
+        width: 70%;
+    }
+    
+    #firstName, #lastName{
+        margin: auto 10px;
+    }
+    
+    #email{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    #email input{
+        width:  85%;
+    }
+    
+    #numberZips{
+        flex-direction: row !important;
+        justify-content: space-evenly;
+    }
+    #stormDate{
+        flex-direction: row !important;
+    }
+    #numberZips label, #stormDate label{
+        margin:0 13px;
+        width: 10%;
+    }
+    #numberZips input{
+        width: 32%;
+    }
+    #stormType{
+        display: flex;
+    }
+    #stormType label{
+        margin:0 13px;
+    }
+    #stormType input, #stormDate input{
+        width: 80%;
+    }
+    .stormcenter #severity {
+    justify-content: space-around;
+    }
+    #regions, #dangerLevel, message{
+        width: 96%;
+    }*/
+    
+    /********************************** main page *************************/
+    
+    .main figure, #franklinBlock, #greenvilleBlock, #springfieldBlock{
+        margin: 10px auto !important;
+        display: flex;
+        float:none;
+        width: 95%;
+    }
+    .main #weatherArea, #franklinArea, #greenvilleArea, #springfieldArea{
+        width: 60%;
+    }
+    .main figure img, .main .city img{
+        width: 39%;
+        height: 200px;
+    }
+    
+    .main .city:nth-child(even){
+        flex-direction:row-reverse;
+    }
+}
+
