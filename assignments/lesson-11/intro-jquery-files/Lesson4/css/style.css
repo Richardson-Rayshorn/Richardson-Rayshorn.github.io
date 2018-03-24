@@ -155,7 +155,7 @@ nav > .navigation {
 .contentBoxes {
 	position:relative;
 	width:958px;
-	height:365px;
+	height:318px;
 	top:350px;
 }
 
@@ -275,6 +275,15 @@ footer a {
 	text-decoration: none;
 	font-weight: normal;
 	color:inherit;
+}
+
+#footerlinks ul{
+    display: flex;
+}
+
+#footerlinks ul li{
+    list-style: none;
+    width: 200px;
 }
 
 
