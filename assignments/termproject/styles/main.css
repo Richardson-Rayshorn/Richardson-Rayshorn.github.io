@@ -1,8 +1,14 @@
+*{
+    font-family: 'Gugi', cursive;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
 .sec-nav{
     flex-direction: column;
     background: rgba(63,63,63,0.8);
     padding: 5px 15px;
     display: none !important;
+    position: absolute;
 }
 
 .sec-nav-show{
@@ -10,9 +16,19 @@
 }
 
 #grayscale{
-    background: lightgray;
+    background: linear-gradient(rgba(211,211,211,0.5), rgba(211,211,211,0.5)),url("../images/bikr.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
 }
 
+#tools-background{
+    background:url("../images/EBIKE_TOOL_SET_3.png");
+    background-repeat: no-repeat;
+    background-size: 432px;
+    background-position: right;
+    background-attachment: fixed;
+}
 section h2{
     text-align: center;
     color: #6fb245;
@@ -39,6 +55,8 @@ section h2:before{
     z-index: 99999;
     top: 41%;
     right: 46%;
+    transform: rotate(-360deg);
+    transition: ease 1s;
 }
 
 #play .fa.fa-play-circle:hover{
@@ -64,6 +82,7 @@ footer{
     color: white;
     margin-top: 0px;
     padding: 2em 0px;
+    border-top:4px solid #6fb245;
 }
 
 #top, #copyright{

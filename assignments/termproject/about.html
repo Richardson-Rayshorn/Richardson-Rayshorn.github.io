@@ -10,25 +10,74 @@
     </head>
     <body>
         <header>
-            <div id="logo" class="logoclass">
-                <img src="images/logo.png" alt="The Site logo">
+            <div id="container">
+                <div id="logo" class="logoclass">
+                    <img src="images/logo.png" alt="The Site logo">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="" class="active">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li class="main-item" id="bike-item"><a>Bicycles</a>
+                            <ul class="sec-nav" id="bike-dropdown">
+                                <li><a href="">Brand one</a></li>
+                                <li><a href="">Brand two</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="main-item" id="activity-item"><a>Activities</a>
+                            <ul class="sec-nav" id="activity-dropdown">
+                                <li><a href="">Tours</a></li>
+                                <li><a href="">Events</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Bicycles</a></li>
-                    <li><a href="">Activities</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </nav>
+            <div id="slider">
+                <img src="images/bicycles-117a.jpg" alt="slider" id="imageslider" width="100%" height="700px">
+                <div id="prev"><i class="fa fa-angle-left fa-5x"></i></div>
+                <div id="next"><i class="fa fa-angle-right fa-5x"></i></div>
+            </div>
         </header>
         <main>
+            
+            <div id="newsletter-area">
+                <div id="block">
+                    <h3>GO BEYOND YOUR LIMITS</h3>
+                    <h4>GET UPDATES</h4>
+                    <input id="newsletter" type="text" placeholder="Enter your E-mail">
+                </div>
+            </div>
         </main>
         <footer>
+            <div id="top">
+                <div id="footer-menu">
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div id="location">
+                    <p>The Mountain Spoke mountainspoke.io 3950 Valley Commons Drive Bozeman, MT</p>
+                </div>
+                <div id="social">
+                    <i class="fa fa-facebook-square"></i>
+                    <i class="fa fa-twitter-square"></i>
+                </div>
+            </div>
+            <div id="copyright">
+                <p>&copy; <span id="year"></span> The Mountain Spoke | Intellectual Rights Preserved</p>
+            </div>
         </footer>
         
-        <script src="scripts/"></script>
+        <script src="scripts/slider.js"></script>
+        <script src="scripts/nav.js"></script>
+        <script src="https://use.fontawesome.com/262566dd5e.js"></script>
+        <script src="scripts/vid.js"></script>
+        <script src="scripts/weather.js"></script>
     </body>
 </html>

@@ -1,5 +1,9 @@
 @media only screen and (min-width:64em){
     
+    nav ul li{
+        cursor: pointer;
+    }
+    
     #prev, #next{
         padding: 20px;
         background: rgba(63,63,63,0.8);
@@ -13,6 +17,9 @@
         z-index: 999;
         top: 329px;
         left: 4%;
+        width: 89px;
+        height: 79px;
+        border-left:4px solid #6fb245;
     }
 
     #next{
@@ -20,6 +27,9 @@
         position: absolute;
         z-index: 999;
         top: 329px;
+        width: 89px;
+        height: 79px;
+        border-right:4px solid #6fb245;
     }
 
     .fa.fa-angle-left, .fa.fa-angle-right{
@@ -127,5 +137,21 @@
         position: relative;
         top: 77px;
         left: 20%;
+    }
+    
+    #block #newsletter{
+        height: 40px;
+        width: 258px;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 4px solid #6fb245;
+    }
+    
+    #block [type="submit"]{
+        margin-top: 10px !important;
+        position: relative !important;
+        left: 74% !important;
+        padding: 10px 7px;
     }
 }
