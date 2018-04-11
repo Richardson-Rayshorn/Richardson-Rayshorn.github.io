@@ -10,4 +10,7 @@ document.addEventListener("DOMContentLoaded",function(){
     function activities(){
         document.getElementById("activity-dropdown").classList.toggle("sec-nav-show");
     }
+    
+    var year = new Date().getFullYear();
+    document.getElementById("year").innerHTML = year;
 });

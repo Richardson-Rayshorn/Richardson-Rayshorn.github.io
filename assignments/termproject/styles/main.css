@@ -58,3 +58,15 @@ section h2:before{
 #calendar table td{
     border: 1px solid;
 }
+
+footer{
+    background: black;
+    color: white;
+    margin-top: 0px;
+    padding: 2em 0px;
+}
+
+#top, #copyright{
+    width: 80%;
+    margin: 0 auto;
+}
