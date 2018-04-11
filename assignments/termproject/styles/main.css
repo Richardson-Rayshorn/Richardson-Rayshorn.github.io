@@ -1,0 +1,60 @@
+.sec-nav{
+    flex-direction: column;
+    background: rgba(63,63,63,0.8);
+    padding: 5px 15px;
+    display: none !important;
+}
+
+.sec-nav-show{
+    display: block !important;
+}
+
+#grayscale{
+    background: lightgray;
+}
+
+section h2{
+    text-align: center;
+    color: #6fb245;
+}
+
+section h2::after, section h2:before{
+    position: absolute;
+    width: 47px;
+    border-radius: 3px;
+    height: 4px;
+    margin-top: 10px;
+    right: 30%;
+    content: " ";
+    line-height: 0;
+    background: #6fb245;
+}
+section h2:before{
+    left: 30%;
+}
+
+#play .fa.fa-play-circle{
+    position: absolute;
+    color: beige;
+    z-index: 99999;
+    top: 41%;
+    right: 46%;
+}
+
+#play .fa.fa-play-circle:hover{
+    transform: rotate(360deg);
+    transition: ease 1s;
+    cursor: pointer;
+}
+
+/*#cover-video{
+    display: none;
+}*/
+
+#calendar table tr{
+    border: 2px solid;
+}
+
+#calendar table td{
+    border: 1px solid;
+}

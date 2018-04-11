@@ -1,0 +1,131 @@
+@media only screen and (min-width:64em){
+    
+    #prev, #next{
+        padding: 20px;
+        background: rgba(63,63,63,0.8);
+        width: 50px;
+        height: 35px;
+        cursor: pointer;
+    }
+
+    #prev{
+        position: absolute;
+        z-index: 999;
+        top: 329px;
+        left: 4%;
+    }
+
+    #next{
+        left: 88%;
+        position: absolute;
+        z-index: 999;
+        top: 329px;
+    }
+
+    .fa.fa-angle-left, .fa.fa-angle-right{
+        line-height: .4;
+        margin-left: 11px; 
+        color: #6fb245;
+    }
+    .logoclass img{
+        width: 122px;
+        height: 95px;
+    }
+
+    #container{
+        display: flex;
+        position: absolute;
+        width: 100%;
+        height: 95px;
+        background: rgba(63,63,63,0.8);
+    }
+
+    #container nav{
+        line-height: 3;
+    }
+
+    #container nav ul{
+        display: flex;
+    }
+
+    #container nav ul li{
+        list-style: none;
+        padding: 0 15px;
+    }
+
+    #container nav ul li a{
+        text-decoration: none;
+        color: #6fb245;
+        font-weight: 600;
+    }
+
+    #container nav ul li a:hover, #container nav ul li a.active{
+        color:white;
+    }
+
+    #videos{
+        overflow: hidden;
+        position: relative;
+    }
+
+    #cover-video{
+        position: absolute;
+        top: 0;
+    }
+
+    section{
+        width: 80%;
+        margin: 0 auto;
+        padding: 5em 0px;
+    }
+
+    #grayscale{
+        padding: 5em 0px;
+    }
+    
+    #services{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+    
+    .services-options{
+        align-content: space-between;
+        width: 20%;
+        text-align: center;
+    }
+    
+    .services-options img{
+        padding: 14px;
+        box-sizing: border-box;
+        background: #6fb245;
+        border-radius: 37%;
+        width: 130px;
+    }
+    
+    #calendar-weather{
+        display: flex;
+    }
+    
+    #calendar-weather article{
+        width: 50%;
+    }
+    
+    #newsletter-area{
+        padding: 6em 0px;
+        background-image: url("../images/newsletter.jpg");
+        background-size: cover;
+        background-position: bottom;
+    }
+    
+    #block{
+        width: 25%;
+        margin: 0 auto;
+        padding: 44px 40px;
+        background: rgba(63,63,63,0.8);
+        color: white;
+        position: relative;
+        top: 77px;
+        left: 20%;
+    }
+}
