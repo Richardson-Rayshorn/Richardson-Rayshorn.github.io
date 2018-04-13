@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="styles/large.css">
         <link rel="stylesheet" href="styles/normalize.css">
     </head>
-    <body>
+    <body class="events page">
         <header>
             <div id="top-nav">
                 <ul>
@@ -63,21 +63,66 @@
                 <p>UPCOMINGS EVENTS ARE LISTED BELOW:</p>
                 <div id="upcoming">
                     <div class="events-upcoming e-upcoming-one">
-                        <p>Date: Sep 24 2018</p>
-                        <h3>Spark Riders Race</h3>
-                        <p>Spark Riders Race covers the top racers across the United States.</p>
+                        <img src="images/bikerally.jpg" alt="Cycle the Continental Divide">
+                        <article>
+                            <p>Date: Sep 24 2018</p>
+                            <h3>Cycle the Continental Divide</h3>
+                            <p>Spark Riders Race covers the top racers across the United States. Winner takes home $10,000</p>
+                            <h5>Requirements</h5>
+                            <ul>
+                                <li>Your Own Bicycle</li>
+                                <li>Health Fitness qualification from a qualified Doctor</li>
+                                <li>Entrance Fee $100.00</li>
+                            </ul>
+                        </article>
                     </div>
                     <div class="events-upcoming e-upcoming-two">
-                        <p>Date: Jan 12 2019</p>
-                        <h3>Bike Rally 2019</h3>
-                        <p>Bike Rally 2019, join the bikers as they show off their rides.</p>
+                        <img src="images/bikerallyeve.jpg" alt="Bike Rally">
+                        <article>
+                            <p>Date: Jan 12 2019</p>
+                            <h3>Bike Rally 2019</h3>
+                            <p>Bike Rally 2019, join the bikers as they show off their rides.</p>
+                        </article>
                     </div>
                     <div class="events-upcoming e-upcoming-three">
-                        <p>Date: Mar 25 2019</p>
-                        <h3>Travel Tours Vacation</h3>
-                        <p>Travel across Bozeman Hill with your friends and family.</p>
+                        <img src="images/biketour.png" alt="Bike Vacation">
+                        <article>
+                            <p>Date: Mar 25 2019</p>
+                            <h3>Travel Tours Vacation</h3>
+                            <p>Travel across Bozeman Hill with your friends and family.</p>
+                        </article>
                     </div>
                 </div>
+            </section>
+            <section>
+                <form id="event-form" method="get" action="thankyou.html">
+                    <h3>Reach Out</h3>
+                    <div>
+                        <label>Full Name</label>
+                        <input type="text" name="first-name" placeholder="First Name" required>
+                    </div>
+                    <div>
+                        <label>E-mail</label>
+                        <input type="email" name="e-mail" placeholder="E-mail" required>
+                    </div>
+                    <div>
+                        <label>Number</label>
+                        <input type="tel" name="Number" placeholder="Number"  required>
+                    </div>
+                    <div>
+                        <label>Date of Birth</label>
+                        <input type="date" name="Birthday" placeholder="Birthday"  required>
+                    </div>
+                    <div>
+                        <label>Country/State</label>
+                        <input type="text" name="country" placeholder="Country/State"  required>
+                    </div>
+                    <div>
+                        <label>Special Accomodations or Comments</label>
+                        <textarea name="message" placeholder="Enter your Message"></textarea>
+                    </div>
+                    <input type="submit">
+                </form>
             </section>
             <div id="newsletter-area">
                 <div id="block">
