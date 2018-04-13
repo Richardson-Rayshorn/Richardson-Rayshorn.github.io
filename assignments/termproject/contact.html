@@ -8,159 +8,90 @@
         <link rel="stylesheet" href="styles/large.css">
         <link rel="stylesheet" href="styles/normalize.css">
     </head>
-    <body>
+    <body class="contact page">
         <header>
+            <div id="top-nav">
+                <ul>
+                    <li><i class="fa fa-facebook-square"></i></li>
+                    <li><i class="fa fa-twitter-square"></i></li>
+                </ul>
+            </div>
             <div id="container">
                 <div id="logo" class="logoclass">
-                    <img src="images/logo.png" alt="The Site logo">
+                    <a href="index.html"><img src="images/logo.png" alt="The Site logo"></a>
                 </div>
-                <nav>
-                    <ul>
-                        <li><a href="" class="active">Home</a></li>
-                        <li><a href="">About</a></li>
+                <div id="mobile-menu">
+                    <i class="fa fa-bars fa-2x" id="mobile-menu-icon"></i>
+                </div>
+                <nav id="nav-menu">
+                   <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="main-item" id="about-item"><a>About</a>
+                            <ul class="sec-nav" id="about-dropdown">
+                                <li><a href="history.html">History</a></li>
+                                <li><a href="future.html">Future</a></li>
+                            </ul>
+                        </li>
                         <li class="main-item" id="bike-item"><a>Bicycles</a>
                             <ul class="sec-nav" id="bike-dropdown">
-                                <li><a href="">Brand one</a></li>
-                                <li><a href="">Brand two</a></li>
+                                <li><a href="modelone.html">Brand one</a></li>
+                                <li><a href="modeltwo.html">Brand two</a></li>
                             </ul>
                         </li>
                         
                         <li class="main-item" id="activity-item"><a>Activities</a>
                             <ul class="sec-nav" id="activity-dropdown">
-                                <li><a href="">Tours</a></li>
-                                <li><a href="">Events</a></li>
+                                <li><a href="tours.html">Tours</a></li>
+                                <li><a href="events.html">Events</a></li>
                             </ul>
                         </li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="contact.html" class="active">Contact</a></li>
                     </ul>
                 </nav>
             </div>
-            <div id="slider">
-                <img src="images/bicycles-117a.jpg" alt="slider" id="imageslider" width="100%" height="700px">
-                <div id="prev"><i class="fa fa-angle-left fa-5x"></i></div>
-                <div id="next"><i class="fa fa-angle-right fa-5x"></i></div>
+            <div id="title-area">
+                <h2>Contact</h2>
             </div>
         </header>
         <main>
+            <aside id="breadcrumb">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="" id="current-page-link"><span id="current-page-title">History</span></a></li>
+                </ul>
+            </aside>
             <section>
-                <h2>WHY MOUNTAIN SPOKE</h2>
-                <p>Finding the best possible place for you bike needs can be difficult, from parts to tours and competitions and much more. You can find all your needs no matter what it is, right here at Mountain Spoke</p>
-                <div id="videos">
-                    <video width="100%" height="500px" id="main-video" loop>
-                        <source src="videos/Ride%20with%20Us.mp4" type="video/mp4"/>
-                    </video>
-                    <video width="100%" height="500px" autoplay loop muted id="cover-video">
-                        <source src="videos/30-Seconds%20with%20Alex%20Marin.mp4" type="video/mp4"/>
-                    </video>
-                    <div id="play">
-                        <i class="fa fa-play-circle fa-5x"></i>
+                <form id="contact" method="get" action="thankyou.html">
+                    <h3>Reach Out</h3>
+                    <div>
+                        <label>First Name</label>
+                        <input type="text" name="first-name" placeholder="First Name" required>
                     </div>
-                </div>
+                    <div>
+                        <label>Last Name</label>
+                        <input type="text" name="last-name" placeholder="Last Name"  required>
+                    </div>
+                    <div>
+                        <label>E-mail</label>
+                        <input type="email" name="e-mail" placeholder="E-mail" required>
+                    </div>
+                    <div>
+                        <label>Message</label>
+                        <textarea name="message" placeholder="Enter your Message"></textarea>
+                    </div>
+                    <input type="submit">
+                </form>
             </section>
-            <div id="grayscale">
-                <section>
-                    <h2>PROGRAMS AT MOUNTAIN SPOKE</h2>
-                    <div id="services">
-                        <div class="services-options">
-                            <img src="images/bicycle.png" alt="bicycle" />
-                            <h3>Bicycle Sales</h3>
-                        </div>
-                        <div class="services-options">
-                            <img src="images/bicycle-race.png" alt="competitions" />
-                            <h3>Competitions</h3>
-                        </div>
-                        <div class="services-options">
-                            <img src="images/itinerary.png" alt="tours" />
-                            <h3>Tours</h3>
-                        </div>
-                        <div class="services-options">
-                            <img src="images/money.png" alt="Sponsorship" />
-                            <h3>Sponsorship</h3>
-                        </div>
-                        <div class="services-options">
-                            <img src="images/cogwheels-overlapped.png" alt="parts" />
-                            <h3>Services + Parts</h3>
-                        </div>
-                    </div>
-                </section>
+            <div id="map">
+                <div id="map-area"></div>
             </div>
-            <section id="calendar-weather">
-                <article id="calendar">
-                    <h3>EVENTS CALENDAR</h3>
-                    <table>
-                        <thead>Calendar</thead>
-                        <tbody>
-                            <tr><th>Month</th></tr>
-                            <tr>
-                                <td>Sun</td>
-                                <td>Mon</td>
-                                <td>Tue</td>
-                                <td>Wed</td>
-                                <td>Thu</td>
-                                <td>Fri</td>
-                                <td>Sat</td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>2</td>
-                                <td>3</td>
-                                <td>4</td>
-                                <td>5</td>
-                                <td>6</td>
-                                <td>7</td>
-                            </tr>
-                            <tr>
-                                <td>8</td>
-                                <td>9</td>
-                                <td>10</td>
-                                <td>11</td>
-                                <td>12</td>
-                                <td>13</td>
-                                <td>14</td>
-                            </tr>
-                            <tr>
-                                <td>15</td>
-                                <td>16</td>
-                                <td>17</td>
-                                <td>18</td>
-                                <td>19</td>
-                                <td>20</td>
-                                <td>21</td>
-                            </tr>
-                            <tr>
-                                <td>22</td>
-                                <td>23</td>
-                                <td>24</td>
-                                <td>25</td>
-                                <td>26</td>
-                                <td>27</td>
-                                <td>28</td>
-                            </tr>
-                            <tr>
-                                <td>29</td>
-                                <td>30</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </article>
-                <article id="weather-area">
-                    <h3>WEATHER</h3>
-                    <div id="city-name"></div>
-                    <img src="" alt="" id="weather-image">
-                    <span id="weather-name"></span>
-                </article>
-            </section>
             <div id="newsletter-area">
                 <div id="block">
                     <h3>GO BEYOND YOUR LIMITS</h3>
                     <h4>GET UPDATES</h4>
                     <input id="newsletter" type="text" placeholder="Enter your E-mail">
+                    <input type="submit">
                 </div>
             </div>
         </main>
@@ -186,10 +117,10 @@
             </div>
         </footer>
         
-        <script src="scripts/slider.js"></script>
         <script src="scripts/nav.js"></script>
         <script src="https://use.fontawesome.com/262566dd5e.js"></script>
-        <script src="scripts/vid.js"></script>
-        <script src="scripts/weather.js"></script>
+        <script src="scripts/map.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAEtRzY-Wc1Vorv4RsQburi3u4Dga0TM4&callback=Maps"
+    async defer></script>
     </body>
 </html>

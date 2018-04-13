@@ -25,7 +25,7 @@
                 </div>
                 <nav id="nav-menu">
                     <ul>
-                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li class="main-item" id="about-item"><a>About</a>
                             <ul class="sec-nav" id="about-dropdown">
                                 <li><a href="history.html">History</a></li>
@@ -34,8 +34,8 @@
                         </li>
                         <li class="main-item" id="bike-item"><a>Bicycles</a>
                             <ul class="sec-nav" id="bike-dropdown">
-                                <li><a href="modelone.html">Brand one</a></li>
-                                <li><a href="modelone.html">Brand two</a></li>
+                                <li><a href="modelone.html" class="active">Brand one</a></li>
+                                <li><a href="modeltwo.html">Brand two</a></li>
                             </ul>
                         </li>
                         
@@ -50,10 +50,9 @@
                     </ul>
                 </nav>
             </div>
-            <div id="slider">
-                <img src="images/bicycles-117a.jpg" alt="slider" id="imageslider" width="100%" height="700px">
-                <div id="prev"><i class="fa fa-angle-left fa-5x"></i></div>
-                <div id="next"><i class="fa fa-angle-right fa-5x"></i></div>
+            <div id="model-one">
+                <img src="images/bmxModelOne.jpg" alt="Model One" class="model" width="100%" height="700px">
+                <div id="model-one-description" class="model-descriptions"></div>
             </div>
         </header>
         <main>
@@ -69,9 +68,6 @@
                     </video>
                     <div id="play">
                         <i class="fa fa-play-circle fa-5x"></i>
-                    </div>
-                    <div id="stop">
-                        <i class="fa fa-stop-circle"></i>
                     </div>
                 </div>
             </section>
@@ -232,5 +228,6 @@
         <script src="https://use.fontawesome.com/262566dd5e.js"></script>
         <script src="scripts/vid.js"></script>
         <script src="scripts/weather.js"></script>
+        <script src="scripts/model.js"></script>
     </body>
 </html>

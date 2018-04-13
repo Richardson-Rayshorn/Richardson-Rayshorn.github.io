@@ -3,9 +3,85 @@
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
+
+#logo img{
+    width: 176px;
+    height: 156px;
+}
+
+#mobile-menu{
+    background: #2a2a2a;
+    color: white;
+}
+
+#mobile-menu .fa{
+    margin-left: 8%;
+    border: 2px solid white;
+    padding: 6px;
+}
+
+nav{
+    position: absolute;
+    background: #2a2a2a;
+    display: none !important;
+    color: white;
+    top: 253px;
+    left: 20px;
+    padding: 20px;
+    z-index: 9;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0 20px;
+}
+
+nav ul li{
+    margin: 0;
+    list-style: none;
+    padding: 10px 0px;
+}
+
+#container nav ul li a{
+    text-decoration: none;
+    color: #6fb245;
+    font-weight: 600;
+}
+
+#container nav ul li a:hover, #container nav ul li a.active, #container nav ul li ul li a.active{
+        color:white;
+}
+
+.nav-display{
+    display:block !important;
+}
+
+#top-nav{
+    background: #2a2a2a;
+    color: white; 
+    padding: 8px;
+}
+
+#top-nav ul{
+    margin: 0;
+    display: flex;
+    position: relative;
+    left: 65%;
+    width: 10%;
+}
+
+#top-nav ul li{
+    list-style: none;
+    padding: 5px;
+}
+
+#top-nav ul li .fa{
+    font-size: 20px;
+}
+
 .sec-nav{
     flex-direction: column;
-    background: rgba(63,63,63,0.8);
+    background: rgba(63,63,63);
     padding: 5px 15px;
     display: none !important;
     position: absolute;
@@ -15,46 +91,131 @@
     display: block !important;
 }
 
+#slider:hover #prev, #slider:hover #next{
+    display: block;
+    transition: .5s ease-in;
+}
+
+#slider img{
+    height: 300px;
+}
+
+#prev, #next{
+        padding: 20px;
+        background: rgba(63,63,63,0.8);
+        width: 50px;
+        height: 35px;
+        cursor: pointer;
+        transition: .5s ease-out;
+    }
+
+#prev:hover, #next:hover{
+    background: rgba(63,63,63);
+}
+
+#prev{
+        position: absolute;
+        z-index: 999;
+        top: 335px;
+        left: 4%;
+        height: 58px;
+        width: 65px;
+        border-left:4px solid #6fb245;
+        display: none;
+    }
+
+#next{
+        left: 78%;
+        position: absolute;
+        z-index: 999;
+        top: 335px;
+        height: 58px;
+        width: 65px;
+        border-right:4px solid #6fb245;
+        display: none;
+    }
+
+.fa.fa-angle-left, .fa.fa-angle-right{
+        line-height: .4;
+        margin-left: 3px; 
+        color: #6fb245;
+        font-size: 48px;
+    }
+
+#main-video, #cover-video{
+    height: 200px;
+}
+
+#videos{
+        overflow: hidden;
+        position: relative;
+    }
+
+    #cover-video{
+        position: absolute;
+        top: 0;
+        z-index: 2;
+    }
+
+.services-options{
+    text-align: center;
+}
+
+.services-options img{
+        padding: 14px;
+        box-sizing: border-box;
+        background: #6fb245;
+        border-radius: 37%;
+        width: 130px;
+    }
+
+
 #grayscale{
-    background: linear-gradient(rgba(211,211,211,0.5), rgba(211,211,211,0.5)),url("../images/bikr.png");
+    background: linear-gradient(rgba(246,246,246,0.5), rgba(246,246,246,0.5)),url("../images/bikr.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-attachment: fixed;
+    padding: 20px 0px;
 }
 
 #tools-background{
-    background:url("../images/EBIKE_TOOL_SET_3.png");
+    background:linear-gradient(rgba(246, 246, 246, 0.5), rgba(221, 221, 221,0.5)), url("../images/timthumb.png");
     background-repeat: no-repeat;
-    background-size: 432px;
-    background-position: right;
+    background-size: contain;
     background-attachment: fixed;
+    background-position: right;
+    margin-top: -19px;
 }
+
+#tools-background h3{
+    padding: 15px 10px;
+    margin: 0;
+    text-align: center;
+}
+
 section h2{
     text-align: center;
     color: #6fb245;
+    background: rgba(246,246,246,0.8);
+    padding: 8px 0px;
 }
 
-section h2::after, section h2:before{
-    position: absolute;
-    width: 47px;
-    border-radius: 3px;
-    height: 4px;
-    margin-top: 10px;
-    right: 30%;
-    content: " ";
-    line-height: 0;
-    background: #6fb245;
-}
-section h2:before{
-    left: 30%;
-}
+.items img{
+        width: 100%;
+    }
+
+.items{
+        overflow: hidden;
+        background: white;
+        margin: 5px;
+    }
 
 #play .fa.fa-play-circle{
     position: absolute;
     color: beige;
     z-index: 99999;
-    top: 41%;
-    right: 46%;
+    top: 27%;
+    right: 43%;
     transform: rotate(-360deg);
     transition: ease 1s;
 }
@@ -65,9 +226,30 @@ section h2:before{
     cursor: pointer;
 }
 
+#stop .fa.fa-stop-circle{
+    position: absolute;
+    color: white;
+    display: block;
+    top: 42%;
+    right: 47%;
+    font-size: 59px;
+    z-index: 0;
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+#stop .fa.fa-stop-circle:hover{
+    opacity: 1 !important;
+}
 /*#cover-video{
     display: none;
 }*/
+#calendar{
+    width: 80% !important;
+    margin: 10px auto;    
+    background: white;
+    padding: 15px;
+}
 
 #calendar table tr{
     border: 2px solid;
@@ -77,15 +259,247 @@ section h2:before{
     border: 1px solid;
 }
 
+#newsletter-area{
+        padding: 5em 0px;
+        background-image: url("../images/newsletter.jpg");
+        background-size: cover;
+        background-position: bottom;
+    }
+
+#block{
+        width: 90%;
+        margin: 0 auto;
+        padding: 44px 10px;
+        background: rgba(63,63,63,0.8);
+        color: white;
+        position: relative;
+        top: 77px;
+        left: 0%;
+    }
+
+ #block #newsletter{
+        height: 40px;
+        width: 258px;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 4px solid #6fb245;
+    }
+    
+    #block [type="submit"]{
+        background-color: greenyellow;
+        text-decoration: none;
+        padding: 10px;
+        border: none;
+        margin-top: 10px;
+    }
+
 footer{
     background: black;
     color: white;
     margin-top: 0px;
-    padding: 2em 0px;
     border-top:4px solid #6fb245;
 }
 
-#top, #copyright{
+#top, #copyright {
     width: 80%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
+
+#footer-menu ul{
+    display: flex;
+    padding-left: 0px;
+}
+
+#footer-menu ul li{
+    list-style: none;
+    padding: 5px 15px;
+}
+
+footer #social{
+    display: flex;
+}
+
+footer #social .fa{
+    width: 12%;
+}
+
+#location{
+    width: 149px;
+}
+
+#title-area{
+    background: url(../images/letter-background-10.jpg);
+    padding: 40px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+#title-area h2{
+    margin: 0;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 35px;
+}
+
+#breadcrumb{
+    width: 80%;
+    margin: 0 auto;    
+}
+
+#breadcrumb ul{
+    display: flex;
+}
+
+#breadcrumb ul li{
+    padding: 5px 10px;
+    list-style: none;
+}
+
+
+#breadcrumb ul li:last-child::before{
+    content: "> ";
+}
+
+#timeline{
+    display: flex;
+    padding-left: 0px;
+    flex-direction: column;
+}
+
+#timeline li{
+    padding: 60px 30px;
+    list-style: none;
+    color: black;
+    font-weight: 600;
+    width: 90%;
+    text-align: center;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+#foundation{
+    background: linear-gradient(rgba(211,211,211,0.3),rgba(211,211,211,0.5)),url(../images/foundation.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#branch{
+    background: linear-gradient(rgba(211,211,211,0.3),rgba(211,211,211,0.5)),url(../images/branch.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#world-wide{
+    background: linear-gradient(rgba(211,211,211,0.3),rgba(211,211,211,0.5)),url(../images/locations.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#future{
+    background: linear-gradient(rgba(211,211,211,0.3),rgba(211,211,211,0.5)),url(../images/techaisle-dx-reseller-future.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#weather{
+    width: 80%;
+    margin: 0 auto;
+    background: white;
+    padding: 15px;
+    text-align: center;
+}
+
+body.contact{
+    background: linear-gradient(rgba(246,246,246,0.5), rgba(246,246,246,0.5));
+}
+
+body.contact section{
+    padding: 2em 0px;
+}
+
+ #contact{
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px;
+    background: white;
+    box-shadow:5px 6px 19px lightgray;
+    }
+
+#contact div{
+    display: flex;
+    flex-direction: column;
+}
+
+#map-area{
+    width: 90%;
+    height: 350px;
+    margin: 14px auto;
+}
+
+.parts-display{
+    
+    border: 1px solid lightgray;
+    margin: 22px;
+    background: white;
+}
+.parts-display img{
+    width: 100%;
+    height: 265px;
+}
+
+.parts-display a{
+    background-color: greenyellow;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#bike-sale, #competition, #tours, #sponsorship, #services-parts{
+    display: none;
+}
+
+.serv-display{
+    display: block !important;
+    background: white;
+    padding: 10px;
+}
+
+#tours-content{
+    padding: 2em 0px;
+}
+
+#contact input[type="submit"]{
+    background-color: greenyellow;
+    text-decoration: none;
+    padding: 10px;
+    border: none;
+    position: relative;
+    left: 70%;
+    margin-top: 10px;
+}
+
+.model-descriptions{
+        position: absolute;
+        top: 138%;
+        left: -100% !important;
+        background: rgba(63,63,63,0.8);
+        color: white;
+        padding: 20px;
+}
+
+.model-description-slide{
+        left: 8% !important;
+        transition: 1s ease-in;
+}
+
+.model-descriptions a{
+        background-color: greenyellow;
+        text-decoration: none;
+        padding: 10px;
+        position: relative;
+        right: 30px;
+    }
+    

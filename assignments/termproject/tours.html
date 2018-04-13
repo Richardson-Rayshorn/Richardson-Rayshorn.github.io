@@ -10,45 +10,72 @@
     </head>
     <body>
         <header>
+            <div id="top-nav">
+                <ul>
+                    <li><i class="fa fa-facebook-square"></i></li>
+                    <li><i class="fa fa-twitter-square"></i></li>
+                </ul>
+            </div>
             <div id="container">
                 <div id="logo" class="logoclass">
-                    <img src="images/logo.png" alt="The Site logo">
+                    <a href="index.html"><img src="images/logo.png" alt="The Site logo"></a>
                 </div>
-                <nav>
+                <div id="mobile-menu">
+                    <i class="fa fa-bars fa-2x" id="mobile-menu-icon"></i>
+                </div>
+                <nav id="nav-menu">
                     <ul>
-                        <li><a href="" class="active">Home</a></li>
-                        <li><a href="">About</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="main-item" id="about-item"><a>About</a>
+                            <ul class="sec-nav" id="about-dropdown">
+                                <li><a href="history.html" class="active">History</a></li>
+                                <li><a href="future.html">Future</a></li>
+                            </ul>
+                        </li>
                         <li class="main-item" id="bike-item"><a>Bicycles</a>
                             <ul class="sec-nav" id="bike-dropdown">
-                                <li><a href="">Brand one</a></li>
-                                <li><a href="">Brand two</a></li>
+                                <li><a href="modelone.html">Brand one</a></li>
+                                <li><a href="modeltwo.html">Brand two</a></li>
                             </ul>
                         </li>
                         
                         <li class="main-item" id="activity-item"><a>Activities</a>
                             <ul class="sec-nav" id="activity-dropdown">
-                                <li><a href="">Tours</a></li>
-                                <li><a href="">Events</a></li>
+                                <li><a href="tours.html" class="active">Tours</a></li>
+                                <li><a href="events.html">Events</a></li>
                             </ul>
                         </li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </div>
-            <div id="slider">
-                <img src="images/bicycles-117a.jpg" alt="slider" id="imageslider" width="100%" height="700px">
-                <div id="prev"><i class="fa fa-angle-left fa-5x"></i></div>
-                <div id="next"><i class="fa fa-angle-right fa-5x"></i></div>
-            </div>
         </header>
         <main>
-            
+            <aside id="breadcrumb">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="" id="current-page-link"><span id="current-page-title">Tours</span></a></li>
+                </ul>
+            </aside>
+            <section id="tours-content">
+                <h2>TOURS</h2>
+                <p>COME JOIN OUR TOURS. Check our Schedules below</p>
+                <ul>
+                    <li>September 18th</li>
+                    <li>October 23th</li>
+                    <li>January 14th</li>
+                    <li>April 26th</li>
+                    <li>June 13th</li>
+                </ul>
+                <div id="tours-gallery"></div>
+            </section>
             <div id="newsletter-area">
                 <div id="block">
                     <h3>GO BEYOND YOUR LIMITS</h3>
                     <h4>GET UPDATES</h4>
                     <input id="newsletter" type="text" placeholder="Enter your E-mail">
+                    <input type="submit">
                 </div>
             </div>
         </main>

@@ -1,57 +1,34 @@
 @media only screen and (min-width:64em){
     
+    #mobile-menu{
+        display: none;
+    }
+    
     nav ul li{
         cursor: pointer;
     }
     
-    #prev, #next{
-        padding: 20px;
-        background: rgba(63,63,63,0.8);
-        width: 50px;
-        height: 35px;
-        cursor: pointer;
-    }
-
-    #prev{
-        position: absolute;
-        z-index: 999;
-        top: 329px;
-        left: 4%;
-        width: 89px;
-        height: 79px;
-        border-left:4px solid #6fb245;
-    }
-
-    #next{
-        left: 88%;
-        position: absolute;
-        z-index: 999;
-        top: 329px;
-        width: 89px;
-        height: 79px;
-        border-right:4px solid #6fb245;
-    }
-
-    .fa.fa-angle-left, .fa.fa-angle-right{
-        line-height: .4;
-        margin-left: 11px; 
-        color: #6fb245;
-    }
     .logoclass img{
         width: 122px;
         height: 95px;
     }
 
-    #container{
-        display: flex;
-        position: absolute;
-        width: 100%;
-        height: 95px;
+    .front #container{
         background: rgba(63,63,63,0.8);
     }
-
+    
+    #container{
+        display: flex;
+        width: 100%;
+        height: 95px;
+        background: rgba(63,63,63);
+    }
+    
     #container nav{
         line-height: 3;
+        position: inherit;
+        background: none;
+        display: block !important;
     }
 
     #container nav ul{
@@ -60,19 +37,59 @@
 
     #container nav ul li{
         list-style: none;
-        padding: 0 15px;
+        padding: 0 15px !important;
+    }
+    
+    .sec-nav{
+        background: rgba(63,63,63,0.8);
+    }
+    
+    #prev, #next{
+        padding: 20px;
+        background: rgba(63,63,63,0.8);
+        width: 50px;
+        height: 35px;
+        cursor: pointer;
+        transition: .5s ease-out;
+    }
+    
+    #slider img{
+        height: 700px;
     }
 
-    #container nav ul li a{
-        text-decoration: none;
+#prev:hover, #next:hover{
+    background: rgba(63,63,63);
+}
+
+#prev{
+        position: absolute;
+        z-index: 999;
+        top: 329px;
+        left: 4%;
+        width: 89px;
+        height: 79px;
+        border-left:4px solid #6fb245;
+        display: none;
+    }
+
+#next{
+        left: 88%;
+        position: absolute;
+        z-index: 999;
+        top: 329px;
+        width: 89px;
+        height: 79px;
+        border-right:4px solid #6fb245;
+        display: none;
+    }
+
+.fa.fa-angle-left, .fa.fa-angle-right{
+        line-height: .4;
+        margin-left: 11px; 
         color: #6fb245;
-        font-weight: 600;
+        font-size: 73px;
     }
-
-    #container nav ul li a:hover, #container nav ul li a.active{
-        color:white;
-    }
-
+    
     #videos{
         overflow: hidden;
         position: relative;
@@ -88,9 +105,62 @@
         margin: 0 auto;
         padding: 5em 0px;
     }
+    
+    section h2{
+    text-align: center;
+    color: #6fb245;
+}
+
+section h2::after, section h2:before{
+    position: absolute;
+    width: 47px;
+    border-radius: 3px;
+    height: 4px;
+    margin-top: 10px;
+    right: 30%;
+    content: " ";
+    line-height: 0;
+    background: #6fb245;
+}
+section h2:before{
+    left: 30%;
+}
+    
+    #play .fa.fa-play-circle{
+    position: absolute;
+    color: beige;
+    z-index: 99999;
+    top: 41%;
+    right: 46%;
+    transform: rotate(-360deg);
+    transition: ease 1s;
+}
+
+#play .fa.fa-play-circle:hover{
+    transform: rotate(360deg);
+    transition: ease 1s;
+    cursor: pointer;
+}
+
+    
+    #main-video, #cover-video{
+        height: 500px;
+    }
+    
+    #future-area, #history-content{
+        padding: 2em 0px;
+    }
 
     #grayscale{
         padding: 5em 0px;
+    }
+    
+    #grayscale section{
+        width: 80%;
+    }
+    
+    body.services #grayscale{
+        padding: 0px !important;    
     }
     
     #services{
@@ -115,6 +185,7 @@
     
     #calendar-weather{
         display: flex;
+        flex-direction: row;
     }
     
     #calendar-weather article{
@@ -149,9 +220,134 @@
     }
     
     #block [type="submit"]{
-        margin-top: 10px !important;
-        position: relative !important;
-        left: 74% !important;
-        padding: 10px 7px;
+        background-color: greenyellow;
+        text-decoration: none;
+        padding: 10px;
+        border: none;
+        position: relative;
+        left: 73%;
+        margin-top: 10px;
+    }
+    
+    #event-calendar{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    #events{
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 100% !important;
+        grid-gap: 10px;
+    }
+    
+    .item1{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
+    
+    .items h3, .items p{
+        padding: 0 15px;
+    }
+    
+    .model-descriptions{
+        position: absolute;
+        top: 67%;
+        left: -100% !important;
+        background: rgba(63,63,63,0.8);
+        color: white;
+        padding: 20px;
+    }
+    
+    .model-description-slide{
+        left: 8% !important;
+        transition: 1s ease-in;
+    }
+    
+    .model-descriptions a{
+        background-color: greenyellow;
+        text-decoration: none;
+        padding: 10px;
+        position: relative;
+        right: 30px;
+    }
+    
+    #part-background{
+        background: linear-gradient(rgba(246,246,246,0.5), rgba(246,246,246,0.5));
+    }
+    
+    #parts-area{
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    #services-page{
+        display: flex;
+    }
+    
+    body.services .services-options a{
+        cursor: pointer;
+    }
+    
+    #upcoming{
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-template-columns: auto auto;
+    }
+    
+    .e-upcoming-one{
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    
+    #top, #copyright{
+       flex-direction: row;
+    }
+    
+    footer #social .fa{
+    font-size: 20px;
+        margin: 0;
+        display: flex;
+        padding: 10px;
+        width: 45%;
+        margin-top: 5px;
+    }
+    #footer-menu ul{
+    display: flex;
+    }
+    
+    #footer-menu{
+        width: 50%;
+    }
+    
+    .parts-display{
+        width: 40%;
+    }
+    
+    #contact{
+       width: 60%; 
+    }
+   
+    #contact input[type="submit"]{
+        left: 84%;
+    }
+    
+    #map-area{
+        width: 80%;
+    }
+    
+    #timeline{
+        flex-direction: row;
+    }
+    
+    #timeline li{
+        width: 25%;
+        margin: auto;
     }
 }
+    
